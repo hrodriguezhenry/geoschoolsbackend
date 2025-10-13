@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime/cache
+.cache/
+.tmp/
+.temp/
+.eslintcache
+
+# Build output
+dist/
+build/
+
+# Environment files (keep example)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# TypeScript
+*.tsbuildinfo
+
+# Uploads (if generated at runtime)
+uploads/
