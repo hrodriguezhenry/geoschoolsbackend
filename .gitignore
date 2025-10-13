@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+.installer.sh
 
 # Logs
 logs/

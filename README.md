@@ -39,5 +39,3 @@ Variables .env
 Notas
 - El frontend por defecto usa `http://localhost:8080/api` (configurable en `assets/js/services/config.js` o desde la UI).
 - Favoritos usan `user_id=1` por simplicidad (sin autenticación).
-
-# geoschoolsbackend
