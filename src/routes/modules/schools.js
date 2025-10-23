@@ -61,9 +61,11 @@ schoolsRouter.get('/', async (req, res, next) => {
     const rows = await query(
       `SELECT s.school_id, s.name, sec.name AS sector, s.address_text,
               s.municipality_id, m.name AS municipality_name,
-              lvl.name AS level_name, s.lat, s.lng
+              lvl.name AS level_name, s.lat, s.lng,
+              mc.lat AS muni_lat, mc.lng AS muni_lng
        FROM schools s
        LEFT JOIN municipalities m ON m.municipality_id = s.municipality_id
+       LEFT JOIN municipality_centroids mc ON mc.municipality_id = m.municipality_id
        LEFT JOIN sectors sec ON sec.sector_id = s.sector_id
        LEFT JOIN levels lvl ON lvl.level_id = s.level_id
        ${where}

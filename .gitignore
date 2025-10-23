@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-.installer.sh
 
 # Logs
 logs/
@@ -42,3 +41,6 @@ Thumbs.db
 
 # Uploads (if generated at runtime)
 uploads/
+
+# Local deployment scripts
+installer.sh
